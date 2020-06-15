@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F9734C99-A2D6-4690-9A67-60BA4A434AA6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HastaTakipProgrami</RootNamespace>
+    <AssemblyName>HastaTakipProgrami</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql, Version=4.1.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Npgsql.4.1.2\lib\net461\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.6.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=4.0.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.4.6.0\lib\netstandard2.0\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.4.6.0\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.3\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DoktorEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoktorEkrani.Designer.cs">
+      <DependentUpon>DoktorEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeriBildirim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeriBildirim.Designer.cs">
+      <DependentUpon>GeriBildirim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HastaEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HastaEkrani.Designer.cs">
+      <DependentUpon>HastaEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HastaSikayetEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HastaSikayetEkran.Designer.cs">
+      <DependentUpon>HastaSikayetEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IlacSikayet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IlacSikayet.Designer.cs">
+      <DependentUpon>IlacSikayet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginDoktor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginDoktor.Designer.cs">
+      <DependentUpon>LoginDoktor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginHasta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginHasta.Designer.cs">
+      <DependentUpon>LoginHasta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReceteIslemler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceteIslemler.Designer.cs">
+      <DependentUpon>ReceteIslemler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReceteListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceteListe.Designer.cs">
+      <DependentUpon>ReceteListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DoktorEkrani.resx">
+      <DependentUpon>DoktorEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeriBildirim.resx">
+      <DependentUpon>GeriBildirim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HastaEkrani.resx">
+      <DependentUpon>HastaEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HastaSikayetEkran.resx">
+      <DependentUpon>HastaSikayetEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IlacSikayet.resx">
+      <DependentUpon>IlacSikayet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginDoktor.resx">
+      <DependentUpon>LoginDoktor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginHasta.resx">
+      <DependentUpon>LoginHasta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReceteIslemler.resx">
+      <DependentUpon>ReceteIslemler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceteListe.resx">
+      <DependentUpon>ReceteListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ekg-dalgalari-1-300x188.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DoktorLogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\472ba6a4a85644d8c943d3beab5ef733.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ekle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hastalar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Güncelle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\çöp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yenile.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\şikayet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geri bildirim.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tik.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log out.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log out1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anamenu.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
