@@ -1,3 +1,3 @@
-# HastaKayit
+# PatientRegistration
 
-Doktor Hasta ilişkileri için yapılmış bir c#form uygulaması. veritabanı olarak sqlServer kullanılmıştır
+A c#form application made for Doctor Patient relations. sqlServer is used for this app as database
